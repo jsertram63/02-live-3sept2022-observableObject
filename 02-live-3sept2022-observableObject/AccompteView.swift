@@ -9,7 +9,8 @@ import SwiftUI
 
 struct AccompteView: View {
     
-    @ObservedObject var profilModel = Profile()
+   // @ObservedObject var profilModel = Profile()
+    @EnvironmentObject var profilModel : Profile
     
     var body: some View {
         VStack {
