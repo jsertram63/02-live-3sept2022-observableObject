@@ -8,22 +8,33 @@
 import SwiftUI
 
 struct AcountView: View {
-    var wordings = ["MacBook Air", "Apple developer Licence"]
-    var prices = [1200, 99]
+    
+    @EnvironmentObject var accountVM: AccountViewModel
     
     var body: some View {
         NavigationView {
-            
-            List {
-                HStack {
-                    ForEach(wordings, id: \.self) { wording in
-                        Text(wording)
-                    }
-                    
-                    ForEach(prices, id: \.self) { price in
-                        Text("\(price)")
+            VStack {
+                List(accountVM.purchased, id: \.id) { label in
+                    HStack {
+                        Text(label.wordings)
+                        
+                        Spacer()
+                        
+                        Text(String(format: "%d", label.prices) + "€")
                     }
                 }
+                
+                Text("solde")
+            }
+            .navigationTitle("Total achats:")
+            .background(Color.cyan.ignoresSafeArea())
+            .onAppear {
+                UINavigationBar.appearance().largeTitleTextAttributes = [
+                    .foregroundColor: UIColor.orange,
+                    .font : UIFont(name:"Noteworthy", size: 35)!
+                ]
+                
+                UITableView.appearance().backgroundColor = .clear
             }
         }
     }
@@ -32,5 +43,6 @@ struct AcountView: View {
 struct AcountView_Previews: PreviewProvider {
     static var previews: some View {
         AcountView()
+            .environmentObject(AccountViewModel())
     }
 }

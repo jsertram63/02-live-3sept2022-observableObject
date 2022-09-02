@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		377058BE28C23920005D7B9B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058BD28C23920005D7B9B /* LoginView.swift */; };
 		377058C028C23A24005D7B9B /* AcountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058BF28C23A24005D7B9B /* AcountView.swift */; };
+		377058C328C2469F005D7B9B /* PurchasesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058C228C2469F005D7B9B /* PurchasesModel.swift */; };
+		377058C528C24728005D7B9B /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058C428C24728005D7B9B /* AccountViewModel.swift */; };
 		89AAF96A28C20898003B73B3 /* _2_live_3sept2022_observableObjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF96928C20898003B73B3 /* _2_live_3sept2022_observableObjectApp.swift */; };
 		89AAF96C28C20898003B73B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF96B28C20898003B73B3 /* ContentView.swift */; };
 		89AAF96E28C20899003B73B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AAF96D28C20899003B73B3 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		377058BD28C23920005D7B9B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		377058BF28C23A24005D7B9B /* AcountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountView.swift; sourceTree = "<group>"; };
+		377058C228C2469F005D7B9B /* PurchasesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesModel.swift; sourceTree = "<group>"; };
+		377058C428C24728005D7B9B /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		89AAF96628C20898003B73B3 /* 02-live-3sept2022-observableObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-live-3sept2022-observableObject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AAF96928C20898003B73B3 /* _2_live_3sept2022_observableObjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _2_live_3sept2022_observableObjectApp.swift; sourceTree = "<group>"; };
 		89AAF96B28C20898003B73B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,8 +53,17 @@
 		377058BC28C22E74005D7B9B /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				377058C428C24728005D7B9B /* AccountViewModel.swift */,
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		377058C128C24634005D7B9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				377058C228C2469F005D7B9B /* PurchasesModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		89AAF95D28C20898003B73B3 = {
@@ -73,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				89AAF96928C20898003B73B3 /* _2_live_3sept2022_observableObjectApp.swift */,
+				377058C128C24634005D7B9B /* Model */,
 				377058BB28C22E45005D7B9B /* View */,
 				377058BC28C22E74005D7B9B /* View Model */,
 				89AAF96D28C20899003B73B3 /* Assets.xcassets */,
@@ -162,6 +176,8 @@
 				377058C028C23A24005D7B9B /* AcountView.swift in Sources */,
 				377058BE28C23920005D7B9B /* LoginView.swift in Sources */,
 				89AAF96C28C20898003B73B3 /* ContentView.swift in Sources */,
+				377058C328C2469F005D7B9B /* PurchasesModel.swift in Sources */,
+				377058C528C24728005D7B9B /* AccountViewModel.swift in Sources */,
 				89AAF96A28C20898003B73B3 /* _2_live_3sept2022_observableObjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
