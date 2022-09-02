@@ -38,6 +38,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		377058BB28C22E45005D7B9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89AAF96B28C20898003B73B3 /* ContentView.swift */,
+				89AAF97928C20996003B73B3 /* AccompteView.swift */,
+				89AAF97B28C20B1C003B73B3 /* SoldeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		377058BC28C22E74005D7B9B /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				89AAF97728C208D1003B73B3 /* Profile.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		89AAF95D28C20898003B73B3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				89AAF96928C20898003B73B3 /* _2_live_3sept2022_observableObjectApp.swift */,
-				89AAF96B28C20898003B73B3 /* ContentView.swift */,
+				377058BB28C22E45005D7B9B /* View */,
+				377058BC28C22E74005D7B9B /* View Model */,
 				89AAF96D28C20899003B73B3 /* Assets.xcassets */,
 				89AAF96F28C20899003B73B3 /* Preview Content */,
-				89AAF97728C208D1003B73B3 /* Profile.swift */,
-				89AAF97928C20996003B73B3 /* AccompteView.swift */,
-				89AAF97B28C20B1C003B73B3 /* SoldeView.swift */,
 			);
 			path = "02-live-3sept2022-observableObject";
 			sourceTree = "<group>";
