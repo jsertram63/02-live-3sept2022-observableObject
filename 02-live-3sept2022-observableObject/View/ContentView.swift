@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        // Container en pile
+        ZStack {
+            // Définition de la couleur d'arrière plan
+            // Il s'agit de la première couche visuel
+            Color.cyan.ignoresSafeArea(edges: .all)
+            
+            // Container vertical
+            // Seconde couche visuel
+           LoginView()
+        }
     }
 }
 

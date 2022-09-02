@@ -11,7 +11,7 @@ import SwiftUI
 struct _2_live_3sept2022_observableObjectApp: App {
     var body: some Scene {
         WindowGroup {
-            AccompteView().environmentObject(Profile())
+            ContentView()
         }
     }
 }

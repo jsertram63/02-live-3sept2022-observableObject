@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		377058BE28C23920005D7B9B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058BD28C23920005D7B9B /* LoginView.swift */; };
+		377058C028C23A24005D7B9B /* AcountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058BF28C23A24005D7B9B /* AcountView.swift */; };
 		89AAF96A28C20898003B73B3 /* _2_live_3sept2022_observableObjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF96928C20898003B73B3 /* _2_live_3sept2022_observableObjectApp.swift */; };
 		89AAF96C28C20898003B73B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF96B28C20898003B73B3 /* ContentView.swift */; };
 		89AAF96E28C20899003B73B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AAF96D28C20899003B73B3 /* Assets.xcassets */; };
 		89AAF97128C20899003B73B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AAF97028C20899003B73B3 /* Preview Assets.xcassets */; };
-		89AAF97828C208D1003B73B3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF97728C208D1003B73B3 /* Profile.swift */; };
-		89AAF97A28C20996003B73B3 /* AccompteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF97928C20996003B73B3 /* AccompteView.swift */; };
-		89AAF97C28C20B1C003B73B3 /* SoldeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF97B28C20B1C003B73B3 /* SoldeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		377058BD28C23920005D7B9B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		377058BF28C23A24005D7B9B /* AcountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountView.swift; sourceTree = "<group>"; };
 		89AAF96628C20898003B73B3 /* 02-live-3sept2022-observableObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-live-3sept2022-observableObject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AAF96928C20898003B73B3 /* _2_live_3sept2022_observableObjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _2_live_3sept2022_observableObjectApp.swift; sourceTree = "<group>"; };
 		89AAF96B28C20898003B73B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89AAF96D28C20899003B73B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89AAF97028C20899003B73B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		89AAF97728C208D1003B73B3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		89AAF97928C20996003B73B3 /* AccompteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccompteView.swift; sourceTree = "<group>"; };
-		89AAF97B28C20B1C003B73B3 /* SoldeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoldeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +40,8 @@
 			isa = PBXGroup;
 			children = (
 				89AAF96B28C20898003B73B3 /* ContentView.swift */,
-				89AAF97928C20996003B73B3 /* AccompteView.swift */,
-				89AAF97B28C20B1C003B73B3 /* SoldeView.swift */,
+				377058BD28C23920005D7B9B /* LoginView.swift */,
+				377058BF28C23A24005D7B9B /* AcountView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -51,7 +49,6 @@
 		377058BC28C22E74005D7B9B /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				89AAF97728C208D1003B73B3 /* Profile.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -162,10 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89AAF97A28C20996003B73B3 /* AccompteView.swift in Sources */,
+				377058C028C23A24005D7B9B /* AcountView.swift in Sources */,
+				377058BE28C23920005D7B9B /* LoginView.swift in Sources */,
 				89AAF96C28C20898003B73B3 /* ContentView.swift in Sources */,
-				89AAF97C28C20B1C003B73B3 /* SoldeView.swift in Sources */,
-				89AAF97828C208D1003B73B3 /* Profile.swift in Sources */,
 				89AAF96A28C20898003B73B3 /* _2_live_3sept2022_observableObjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
