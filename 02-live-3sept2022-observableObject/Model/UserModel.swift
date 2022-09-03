@@ -7,6 +7,8 @@
 
 import Foundation
 
+// Struct qui va définir un model d'utilisateur
+// Protocole Identifiable afin de rendre la structure repérable via un id auto-incrémenté
 struct UserModel: Identifiable {
     var id = UUID()
     var fullName: String

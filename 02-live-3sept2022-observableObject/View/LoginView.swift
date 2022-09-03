@@ -24,6 +24,7 @@ struct LoginView: View {
                 .multilineTextAlignment(.center)
                 .padding(.top)
             
+            // Container vue séparateur
             Spacer()
             
             VStack(alignment: .center, spacing: 40.0) {
@@ -36,6 +37,8 @@ struct LoginView: View {
                     .padding(.top)
                 
                 VStack {
+                    // Container vue de champ
+                    // Prend en paramètres un type String et la propriété en Binding avec $ (liaison)
                     TextField("example@example.fr", text: $emailAdress2)
                         .padding()
                         .background(.white)
@@ -43,6 +46,7 @@ struct LoginView: View {
                         .padding(.horizontal, 15)
                         .padding(.bottom, 5)
                     
+                    // SecureField se comporte exactement comme TextField mais cache les caractères
                     SecureField("**********", text: $password2)
                         .padding()
                         .background(.white)
@@ -64,6 +68,7 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
+        // Lorsqu'on crée un vue qui possède des propriétés, il faut également lui passer ces valeurs (fictives ou réelles) en paramètres
         LoginView(emailAdress2: .constant("example@example.fr"), password2: .constant("***********"))
             .environmentObject(AccountViewModel())
             .background(Color.cyan.ignoresSafeArea())
