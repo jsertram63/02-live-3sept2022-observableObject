@@ -43,6 +43,11 @@ struct AccountView: View {
                     Image(systemName: "person.crop.circle.fill.badge.minus")
                     .renderingMode(.original)
                     .font(.title3)
+                    .onTapGesture {
+                        withAnimation {
+                            accountVM.isConnected = false
+                        }
+                    }
             )
             .background(Color.cyan.ignoresSafeArea())
             // A l'apparition de la vue on initialise une apparence de la NavigationTiltle
