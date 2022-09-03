@@ -24,11 +24,12 @@ struct LoginView: View {
             Spacer()
             
             VStack(alignment: .center, spacing: 50.0) {
-                Image(systemName: "banknote.fill")
+                Image("SwiftUIBank")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 100.0)
-                    .foregroundColor(.orange)
+                    .frame(width: 100.0, height: 100.0)
+                    .clipShape(Circle())
+                    .shadow(radius: 5)
                 
                 VStack {
                     TextField("example@example.fr", text: $emailAdress)

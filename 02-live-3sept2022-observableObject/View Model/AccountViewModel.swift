@@ -8,10 +8,9 @@
 import Foundation
 
 class AccountViewModel: ObservableObject {
+    
     @Published var purchased: [PurchasesModel] = [
         PurchasesModel(wordings: "MacBook Air", prices: 1200),
         PurchasesModel(wordings: "Apple developer Licence", prices: 99)
     ]
-    
-    
 }

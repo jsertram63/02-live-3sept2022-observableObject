@@ -23,10 +23,8 @@ struct AcountView: View {
                         Text(String(format: "%d", label.prices) + "€")
                     }
                 }
-                
-                Text("solde")
             }
-            .navigationTitle("Total achats:")
+            .navigationTitle("Vos achats")
             .background(Color.cyan.ignoresSafeArea())
             .onAppear {
                 UINavigationBar.appearance().largeTitleTextAttributes = [
