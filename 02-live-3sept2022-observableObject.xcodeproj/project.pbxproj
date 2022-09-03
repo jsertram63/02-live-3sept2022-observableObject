@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373744B028C341CC00BD3970 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373744AF28C341CC00BD3970 /* UserModel.swift */; };
 		377058BE28C23920005D7B9B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058BD28C23920005D7B9B /* LoginView.swift */; };
 		377058C028C23A24005D7B9B /* AcountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058BF28C23A24005D7B9B /* AcountView.swift */; };
 		377058C328C2469F005D7B9B /* PurchasesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058C228C2469F005D7B9B /* PurchasesModel.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		373744AF28C341CC00BD3970 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		377058BD28C23920005D7B9B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		377058BF28C23A24005D7B9B /* AcountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountView.swift; sourceTree = "<group>"; };
 		377058C228C2469F005D7B9B /* PurchasesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesModel.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				377058C228C2469F005D7B9B /* PurchasesModel.swift */,
+				373744AF28C341CC00BD3970 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				377058C028C23A24005D7B9B /* AcountView.swift in Sources */,
+				373744B028C341CC00BD3970 /* UserModel.swift in Sources */,
 				377058BE28C23920005D7B9B /* LoginView.swift in Sources */,
 				89AAF96C28C20898003B73B3 /* ContentView.swift in Sources */,
 				377058C328C2469F005D7B9B /* PurchasesModel.swift in Sources */,

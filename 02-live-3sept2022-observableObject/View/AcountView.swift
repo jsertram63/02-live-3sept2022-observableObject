@@ -25,11 +25,15 @@ struct AcountView: View {
                 }
             }
             .navigationTitle("Vos achats")
+            .navigationBarItems(
+                trailing:
+                    Text("\(accountVM.user.fullName)")
+            )
             .background(Color.cyan.ignoresSafeArea())
             .onAppear {
                 UINavigationBar.appearance().largeTitleTextAttributes = [
-                    .foregroundColor: UIColor.orange,
-                    .font : UIFont(name:"Noteworthy", size: 35)!
+                    .foregroundColor: UIColor.black,
+                    .font : UIFont(name:"Noteworthy", size: 30)!
                 ]
                 
                 UITableView.appearance().backgroundColor = .clear
