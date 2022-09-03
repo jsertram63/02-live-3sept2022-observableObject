@@ -9,8 +9,10 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var emailAdress: String = ""
-    @State var password: String = ""
+    @Binding var emailAdress2: String
+    @Binding var password2: String
+    
+    @EnvironmentObject var accountVM: AccountViewModel
     
     var body: some View {
         VStack {
@@ -20,6 +22,7 @@ struct LoginView: View {
                 .foregroundColor(.white)
                 .bold()
                 .multilineTextAlignment(.center)
+                .padding(.top)
             
             Spacer()
             
@@ -33,14 +36,14 @@ struct LoginView: View {
                     .padding(.top)
                 
                 VStack {
-                    TextField("example@example.fr", text: $emailAdress)
+                    TextField("example@example.fr", text: $emailAdress2)
                         .padding()
                         .background(.white)
                         .cornerRadius(5.0)
                         .padding(.horizontal, 15)
                         .padding(.bottom, 5)
                     
-                    TextField("**********", text: $password)
+                    SecureField("**********", text: $password2)
                         .padding()
                         .background(.white)
                         .cornerRadius(5.0)
@@ -54,17 +57,6 @@ struct LoginView: View {
             .shadow(radius: 5)
             .padding()
             
-            Button {
-                //
-            } label: {
-                Text("Connexion")
-                    .fontWeight(.bold)
-                    .padding(8.0)
-            }
-            .buttonStyle(.borderedProminent)
-            .shadow(radius: 5)
-            .padding()
-            
             Spacer()
         }
     }
@@ -72,7 +64,8 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(emailAdress2: .constant("example@example.fr"), password2: .constant("***********"))
+            .environmentObject(AccountViewModel())
             .background(Color.cyan.ignoresSafeArea())
     }
 }

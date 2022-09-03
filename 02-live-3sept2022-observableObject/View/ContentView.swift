@@ -9,6 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @EnvironmentObject var accountVM: AccountViewModel
+    
+    @State var emailAdress1 = ""
+    @State var password1 = ""
+    
     var body: some View {
         // Container en pile
         ZStack {
@@ -17,8 +22,29 @@ struct ContentView: View {
             Color.cyan.ignoresSafeArea(edges: .all)
             
             // Container vertical
-            // Seconde couche visuel
-           LoginView()
+            // Secondes couches visuelles
+            VStack {
+                if accountVM.isConnected == true {
+                    AccountView()
+                } else {
+                    LoginView(emailAdress2: $emailAdress1, password2: $password1)
+                    
+                    Button {
+                        withAnimation() {
+                            if accountVM.user.email == emailAdress1 && accountVM.user.password == password1 {
+                                accountVM.isConnected = true
+                            }
+                        }
+                    } label: {
+                        Text("Connexion")
+                            .fontWeight(.bold)
+                            .padding(8.0)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .shadow(radius: 5)
+                    .padding()
+                }
+            }
         }
     }
 }
@@ -26,5 +52,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(AccountViewModel())
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AcountView: View {
+struct AccountView: View {
     
     @EnvironmentObject var accountVM: AccountViewModel
     
@@ -24,10 +24,17 @@ struct AcountView: View {
                     }
                 }
             }
-            .navigationTitle("Vos achats")
+            .navigationTitle("Opérations")
+            .navigationBarTitleDisplayMode(.large)
             .navigationBarItems(
-                trailing:
+                leading:
                     Text("\(accountVM.user.fullName)")
+                    .fontWeight(.medium)
+                ,
+                trailing:
+                    Image(systemName: "person.crop.circle.fill.badge.minus")
+                    .renderingMode(.original)
+                    .font(.title3)
             )
             .background(Color.cyan.ignoresSafeArea())
             .onAppear {
@@ -44,7 +51,7 @@ struct AcountView: View {
 
 struct AcountView_Previews: PreviewProvider {
     static var previews: some View {
-        AcountView()
+        AccountView()
             .environmentObject(AccountViewModel())
     }
 }
