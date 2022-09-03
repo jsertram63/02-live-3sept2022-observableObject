@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		373744B028C341CC00BD3970 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373744AF28C341CC00BD3970 /* UserModel.swift */; };
+		37487CAA28C39771003BA702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37487CA928C39771003BA702 /* LaunchScreen.storyboard */; };
 		377058BE28C23920005D7B9B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058BD28C23920005D7B9B /* LoginView.swift */; };
 		377058C028C23A24005D7B9B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058BF28C23A24005D7B9B /* AccountView.swift */; };
 		377058C328C2469F005D7B9B /* PurchasesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377058C228C2469F005D7B9B /* PurchasesModel.swift */; };
@@ -20,11 +21,12 @@
 
 /* Begin PBXFileReference section */
 		373744AF28C341CC00BD3970 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		37487CA928C39771003BA702 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		377058BD28C23920005D7B9B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		377058BF28C23A24005D7B9B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		377058C228C2469F005D7B9B /* PurchasesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesModel.swift; sourceTree = "<group>"; };
 		377058C428C24728005D7B9B /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
-		89AAF96628C20898003B73B3 /* 02-live-3sept2022-observableObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-live-3sept2022-observableObject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89AAF96628C20898003B73B3 /* SwiftUI Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AAF96928C20898003B73B3 /* _2_live_3sept2022_observableObjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _2_live_3sept2022_observableObjectApp.swift; sourceTree = "<group>"; };
 		89AAF96B28C20898003B73B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89AAF96D28C20899003B73B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 				89AAF96B28C20898003B73B3 /* ContentView.swift */,
 				377058BD28C23920005D7B9B /* LoginView.swift */,
 				377058BF28C23A24005D7B9B /* AccountView.swift */,
+				37487CA928C39771003BA702 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -80,7 +83,7 @@
 		89AAF96728C20898003B73B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				89AAF96628C20898003B73B3 /* 02-live-3sept2022-observableObject.app */,
+				89AAF96628C20898003B73B3 /* SwiftUI Bank.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,7 +126,7 @@
 			);
 			name = "02-live-3sept2022-observableObject";
 			productName = "02-live-3sept2022-observableObject";
-			productReference = 89AAF96628C20898003B73B3 /* 02-live-3sept2022-observableObject.app */;
+			productReference = 89AAF96628C20898003B73B3 /* SwiftUI Bank.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37487CAA28C39771003BA702 /* LaunchScreen.storyboard in Resources */,
 				89AAF97128C20899003B73B3 /* Preview Assets.xcassets in Resources */,
 				89AAF96E28C20899003B73B3 /* Assets.xcassets in Resources */,
 			);
@@ -317,6 +321,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +330,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.martres.-2-live-3sept2022-observableObject";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SwiftUI Bank";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,6 +351,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -354,7 +360,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.martres.-2-live-3sept2022-observableObject";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SwiftUI Bank";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
